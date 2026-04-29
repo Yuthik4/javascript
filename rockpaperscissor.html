@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        let randomNum = Math.random();
+
+        let computerMove = ``;
+        if (randomNum <= 1 / 3) {
+          computerMove = `Rock`;
+        } else if (randomNum > 1 / 3 && randomNum <= 2 / 3) {
+          computerMove = `Paper`;
+        } else {
+          computerMove = `Scissor`;
+        }
+        let result = ``;
+        if (computerMove === `Rock`) {
+          result = `Draw`;
+        } else if (computerMove === `Paper`) {
+          result = `You Loose`;
+        } else {
+          result = 'You Win';
+        }
+        alert(`The computer choose ${computerMove}. ${result}`);
+      "
+    >
+      ROCK 🪨
+    </button>
+    <button
+      onclick="
+        let randomNum = Math.random();
+
+        let computerMove = ``;
+        if (randomNum <= 1 / 3) {
+          computerMove = `Rock`;
+        } else if (randomNum > 1 / 3 && randomNum <= 2 / 3) {
+          computerMove = `Paper`;
+        } else {
+          computerMove = `Scissor`;
+        }
+        let result = ``;
+        if (computerMove === `Rock`) {
+          result = `You Win`;
+        } else if (computerMove === `Paper`) {
+          result = `Draw`;
+        } else {
+          result = 'You Loose';
+        }
+        alert(`The computer choose ${computerMove}. ${result}`);
+      "
+    >
+      PAPER 📃
+    </button>
+    <button
+      onclick="
+        let randomNum = Math.random();
+
+        let computerMove = ``;
+        if (randomNum <= 1 / 3) {
+          computerMove = `Rock`;
+        } else if (randomNum > 1 / 3 && randomNum <= 2 / 3) {
+          computerMove = `Paper`;
+        } else {
+          computerMove = `Scissor`;
+        }
+        let result = ``;
+        if (computerMove === `Rock`) {
+          result = `You Loose`;
+        } else if (computerMove === `Paper`) {
+          result = `You Win`;
+        } else {
+          result = 'Draw';
+        }
+        alert(`The computer choose ${computerMove}. ${result}`);
+      "
+    >
+      SCISSOR ✂️
+    </button>
+  </body>
+</html>
